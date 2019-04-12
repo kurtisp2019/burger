@@ -1,0 +1,55 @@
+<!-- index.handlebars-->
+<!------------------------------------------------------------------------------------->
+
+<div style="text-align: center">
+    <img class="img-burger" src="http://www.economicmodeling.com/wp-content/uploads/temp-sticker.jpg" alt="">
+</div>
+<h1>Eat-Da-Burger</h1>
+
+<div style="text-align:center">
+    <table id="burger-list">
+        <tr>
+            <th>
+                <div class="burger-name-container">
+                    <label>Burger Name</label>
+                </div>
+            </th>
+            <th><button id="btn-devour">Devour it!</button></th>
+        </tr>
+    </table>
+    <table id="devoured-list">
+        <tr>
+            <th>
+                <div class="burger-devoured-container">
+                    <label>Burger Name</label>
+                </div>
+            </th>
+        </tr>
+    </table>
+</div>
+
+<div style="clear: left">
+    <div><textarea id="ta-burger-input" rows="4" cols="50"></textarea></div>
+    <button id="btn-submit">Submit</button>
+    <div style="text-align: center"><label>Some temporary text</label></div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.0.min.js"
+    integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+<script>
+
+    $("#btn-submit").on("click", function (_e) {
+        _e.preventDefault();
+
+        var burgerName =
+            $.ajax({
+                type: "PUT",
+                url: "/api/burgers/" + 1,
+                data: {
+                    burger_name: "this works again! asdadasdada",
+                    devoured: 1
+                }
+            });
+        location.reload();
+    });
+</script>

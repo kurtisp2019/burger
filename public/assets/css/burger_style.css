@@ -1,0 +1,78 @@
+/* 
+*
+*       burger_style.css
+*
+*/
+
+body {
+
+    background-color: rgb(255, 200, 100);
+
+}
+
+.burger-name-container{
+    background-color:white; 
+    padding-top: 10px; 
+    height: 40px; 
+    width: 300px;
+}
+
+.burger-devoured-container{
+    color: rgb(107, 106, 106); 
+    background-color:rgb(240, 240, 236); 
+    padding-top: 10px; 
+    height: 40px; 
+    width: 300px;
+}
+
+#burger-list {
+    width:400px;
+}
+
+#devoured-list {
+    padding-left: 30px; 
+    width: 400px;
+}
+
+#burger-list,
+#devoured-list{
+
+    display: inline-block;
+}
+
+#btn-submit{
+
+    background-color: blue;
+    color: white;
+    height: 30px;
+    width: 100px;
+    font-size: 14px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+#btn-devour{
+    width:100px; 
+    height: 30px; 
+    font-size: 14px;
+}
+#ta-burger-input{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.img-burger{
+    width:300px; 
+    height:200px;
+    
+}
+h1{
+    text-align: center;
+}
+
+.both-lists{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
