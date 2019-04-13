@@ -52,7 +52,7 @@ body {
     margin-right: auto;
 
 }
-#btn-devour{
+.btn-devour{
     width:100px; 
     height: 30px; 
     font-size: 14px;
